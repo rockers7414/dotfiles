@@ -92,6 +92,7 @@ let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 let g:syntastic_aggregate_errors=1
 let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_flake8_post_args='--ignore=E121,E122,E123,E124,E125,E126,E127,E128,E241'
 let g:syntastic_typescript_checkers=['tsuquyomi']
 let g:syntastic_mode_map={"mode": "active","passive_filetypes":["html"]}
 
