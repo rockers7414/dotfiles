@@ -68,7 +68,6 @@ nmap <C-t> :TagbarToggle<CR>
 " Comment functions so powerful - no comment necessary.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'scrooloose/nerdcommenter'
-let g:NERDSpaceDelims=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CTRLP.VIM
