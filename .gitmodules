@@ -1,0 +1,67 @@
+[submodule "vim/bundle/Vundle.vim"]
+        path = vim/bundle/Vundle.vim
+        url = git://github.com/VundleVim/Vundle.vim
+
+[submodule "vim/bundle/ctrlp.vim"]
+        path = vim/bundle/ctrlp.vim
+        url = git://github.com/kien/ctrlp.vim
+
+[submodule "vim/bundle/emmet.vim"]
+        path = vim/bundle/emmet-vim
+        url = git://github.com/mattn/emmet-vim
+
+[submodule "vim/bundle/nerdcommenter"]
+        path = vim/bundle/nerdcommenter
+        url = git://github.com/scrooloose/nerdcommenter
+
+[submodule "vim/bundle/nerdtree"]
+        path = vim/bundle/nerdtree
+        url = git://github.com/scrooloose/nerdtree
+
+[submodule "vim/bundle/python-mode"]
+        path = vim/bundle/python-mode
+        url = git://github.com/python-mode/python-mode
+
+[submodule "vim/bundle/syntastic"]
+        path = vim/bundle/syntastic
+        url = git://github.com/vim-syntastic/syntastic
+
+[submodule "vim/bundle/tagbar"]
+        path = vim/bundle/tagbar
+        url = git://github.com/majutsushi/tagbar
+
+[submodule "vim/bundle/tsuquyomi"]
+        path = vim/bundle/tsuquyomi
+        url = git://github.com/Quramy/tsuquyomi
+
+[submodule "vim/bundle/typescript-vim"]
+        path = vim/bundle/typescript-vim
+        url = git://github.com/leafgarland/typescript-vim
+
+[submodule "vim/bundle/vim-airline"]
+        path = vim/bundle/vim-airline
+        url = git://github.com/vim-airline/vim-airline
+
+[submodule "vim/bundle/vim-airline-themes"]
+        path = vim/bundle/vim-airline-themes
+        url = git://github.com/vim-airline/vim-airline-themes
+
+[submodule "vim/bundle/vim-autoformat"]
+        path = vim/bundle/vim-autoformat
+        url = git://github.com/Chiel92/vim-autoformat
+
+[submodule "vim/bundle/vim-colors-solarized"]
+        path = vim/bundle/vim-colors-solarized
+        url = git://github.com/altercation/vim-colors-solarized
+
+[submodule "vim/bundle/vim-javacomplete2"]
+        path = vim/bundle/vim-javacomplete2
+        url = git://github.com/artur-shaik/vim-javacomplete2
+
+[submodule "vim/bundle/vim-move"]
+        path = vim/bundle/vim-move
+        url = git://github.com/matze/vim-move
+
+[submodule "vim/bundle/vimproc.vim"]
+        path = vim/bundle/vimproc.vim
+        url = git://github.com/Shougo/vimproc.vim
