@@ -1,6 +1,7 @@
 set backspace=indent,eol,start
 set number
 set expandtab
+set hlsearch
 autocmd FileType c,cpp,java,python set tabstop=4 shiftwidth=4
 autocmd FileType html,xml,json,css,javascript,typescript set tabstop=2 shiftwidth=2
 
@@ -78,22 +79,11 @@ let g:ctrlp_working_path_mode=0
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/temp/*,*/target/*,*/node_modules/*,*/__pycache__/*,*.pyc
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Syntastic
-" Syntax checking hacks for vim
+" ASYNCHRONOUS LINT ENGINE
+" ALE (Asynchronous Lint Engine) is a plugin for providing linting in NeoVim 
+" and Vim 8 while you edit your text files.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'scrooloose/syntastic'
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
-let g:syntastic_aggregate_errors=1
-let g:syntastic_python_checkers=['flake8']
-let g:syntastic_python_flake8_post_args='--ignore=E121,E122,E123,E124,E125,E126,E127,E128,E241'
-let g:syntastic_typescript_checkers=['tsuquyomi']
-let g:syntastic_mode_map={"mode": "active","passive_filetypes":["html"]}
+Plugin 'w0rp/ale'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " typescript-vim
@@ -114,12 +104,11 @@ Plugin 'mattn/emmet-vim'
 Plugin 'Chiel92/vim-autoformat'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" TSUQUYOMI
-" Make your Vim a TypeScript IDE.
+" YOUCOMPLETEME
+" A CODE-COMPLETION ENGINE FOR VIM
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'shougo/vimproc.vim'
-Plugin 'quramy/tsuquyomi'
-let g:tsuquyomi_disable_quickfix=1
+Plugin 'valloric/youcompleteme'
+Plugin 'marijnh/tern_for_vim'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VIM-JAVACOMPLETE2
@@ -127,16 +116,6 @@ let g:tsuquyomi_disable_quickfix=1
 Plugin 'artur-shaik/vim-javacomplete2'
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 autocmd FileType java inoremap <buffer> . .<C-X><C-O><C-P>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" python-mode
-" Python-mode is a vim plugin that helps you to create python code very quickly
-" by utilizing libraries including pylint, rope, pydoc, pyflakes, pep8,
-" autopep8, pep257 and mccabe for features like static analysis, refactoring, 
-" folding, completion, documentation, and more.
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'klen/python-mode'
-let g:pymode_python = 'python3'
 
 call vundle#end()
 filetype plugin indent on

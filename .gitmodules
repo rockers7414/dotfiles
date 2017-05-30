@@ -18,21 +18,9 @@
         path = vim/bundle/nerdtree
         url = git://github.com/scrooloose/nerdtree
 
-[submodule "vim/bundle/python-mode"]
-        path = vim/bundle/python-mode
-        url = git://github.com/python-mode/python-mode
-
-[submodule "vim/bundle/syntastic"]
-        path = vim/bundle/syntastic
-        url = git://github.com/vim-syntastic/syntastic
-
 [submodule "vim/bundle/tagbar"]
         path = vim/bundle/tagbar
         url = git://github.com/majutsushi/tagbar
-
-[submodule "vim/bundle/tsuquyomi"]
-        path = vim/bundle/tsuquyomi
-        url = git://github.com/Quramy/tsuquyomi
 
 [submodule "vim/bundle/typescript-vim"]
         path = vim/bundle/typescript-vim
@@ -65,3 +53,15 @@
 [submodule "vim/bundle/vimproc.vim"]
         path = vim/bundle/vimproc.vim
         url = git://github.com/Shougo/vimproc.vim
+
+[submodule "vim/bundle/ale"]
+        path = vim/bundle/ale
+        url = git@github.com:w0rp/ale.git 
+
+[submodule "vim/bundle/tern_for_vim"]
+        path = vim/bundle/tern_for_vim
+        url = git@github.com:ternjs/tern_for_vim.git
+
+[submodule "vim/bundle/youcompleteme"]
+        path = vim/bundle/youcompleteme
+        url = git@github.com:Valloric/YouCompleteMe.git
