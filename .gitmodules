@@ -56,12 +56,12 @@
 
 [submodule "vim/bundle/ale"]
         path = vim/bundle/ale
-        url = git@github.com:w0rp/ale.git 
+        url = git://github.com/w0rp/ale.git 
 
 [submodule "vim/bundle/tern_for_vim"]
         path = vim/bundle/tern_for_vim
-        url = git@github.com:ternjs/tern_for_vim.git
+        url = git://github.com/ternjs/tern_for_vim.git
 
 [submodule "vim/bundle/youcompleteme"]
         path = vim/bundle/youcompleteme
-        url = git@github.com:Valloric/YouCompleteMe.git
+        url = git://github.com/Valloric/YouCompleteMe.git
