@@ -65,3 +65,12 @@
 [submodule "vim/bundle/youcompleteme"]
         path = vim/bundle/youcompleteme
         url = git://github.com/Valloric/YouCompleteMe.git
+[submodule "vim/bundle/tabular"]
+	path = vim/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
+	url = git://github.com/plasticboy/vim-markdown.git
+[submodule "vim/bundle/vim-instant-markdown"]
+	path = vim/bundle/vim-instant-markdown
+	url = git://github.com/suan/vim-instant-markdown.git

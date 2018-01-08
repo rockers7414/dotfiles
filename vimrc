@@ -36,6 +36,7 @@ vmap <C-k> <Plug>MoveBlockUp
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'scrooloose/nerdtree'
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.pyc$','__pycache__']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SOLARIZED COLORSCHEME FOR VIM
@@ -90,6 +91,19 @@ Plugin 'editorconfig/editorconfig-vim'
 " and Vim 8 while you edit your text files.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'w0rp/ale'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim Markdown
+" Syntax highlighting, matching rules and mappings for the original Markdown
+" and extensions.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-instant-markdown
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'suan/vim-instant-markdown'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " typescript-vim
