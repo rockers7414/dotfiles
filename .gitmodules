@@ -54,10 +54,6 @@
         path = vim/bundle/vimproc.vim
         url = git://github.com/Shougo/vimproc.vim
 
-[submodule "vim/bundle/ale"]
-        path = vim/bundle/ale
-        url = git://github.com/w0rp/ale.git 
-
 [submodule "vim/bundle/tern_for_vim"]
         path = vim/bundle/tern_for_vim
         url = git://github.com/ternjs/tern_for_vim.git
@@ -65,12 +61,19 @@
 [submodule "vim/bundle/youcompleteme"]
         path = vim/bundle/youcompleteme
         url = git://github.com/Valloric/YouCompleteMe.git
+
 [submodule "vim/bundle/tabular"]
 	path = vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
 	url = git://github.com/plasticboy/vim-markdown.git
+
 [submodule "vim/bundle/vim-instant-markdown"]
 	path = vim/bundle/vim-instant-markdown
 	url = git://github.com/suan/vim-instant-markdown.git
+
+[submodule "vim/bundle/editorconfig-vim"]
+	path = vim/bundle/editorconfig-vim
+	url = git://github.com/editorconfig/editorconfig-vim
