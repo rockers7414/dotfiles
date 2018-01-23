@@ -2,8 +2,9 @@ set backspace=indent,eol,start
 set number
 set expandtab
 set hlsearch
-autocmd FileType c,cpp,java,python set tabstop=4 shiftwidth=4
-autocmd FileType html,xml,json,css,javascript,typescript set tabstop=2 shiftwidth=2
+autocmd FileType c,cpp,java,python,sql set tabstop=4 shiftwidth=4
+autocmd FileType html,xml,yaml,json,css,javascript,typescript set tabstop=2 shiftwidth=2
+autocmd FileType make setlocal noexpandtab
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " [Vundle]
@@ -36,7 +37,8 @@ vmap <C-k> <Plug>MoveBlockUp
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'scrooloose/nerdtree'
 map <C-n> :NERDTreeToggle<CR>
-let NERDTreeIgnore = ['\.pyc$','__pycache__']
+let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.pyc$','__pycache__','\.swp$']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SOLARIZED COLORSCHEME FOR VIM
@@ -79,6 +81,7 @@ let NERDSpaceDelims=1
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode=0
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/temp/*,*/target/*,*/node_modules/*,*/__pycache__/*,*.pyc
+let g:ctrlp_show_hidden = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " EditorConfig Vim Plugin
