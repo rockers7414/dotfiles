@@ -80,3 +80,6 @@
 [submodule "vim/bundle/ale"]
 	path = vim/bundle/ale
 	url = git@github.com:w0rp/ale.git
+[submodule "vim/bundle/BufOnly.vim"]
+	path = vim/bundle/BufOnly.vim
+	url = git@github.com:vim-scripts/BufOnly.vim.git
