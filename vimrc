@@ -2,6 +2,7 @@ set backspace=indent,eol,start
 set number
 set expandtab
 set hlsearch
+set incsearch
 autocmd FileType c,cpp,java,python,sql set tabstop=4 shiftwidth=4
 autocmd FileType html,xml,yaml,json,css,javascript,typescript set tabstop=2 shiftwidth=2
 autocmd FileType make setlocal noexpandtab
@@ -19,13 +20,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" BufOnly.vim
-" Delete all buffers except the current/named buffer
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'BufOnly.vim'
-map <Leader>q :BOnly<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " move
