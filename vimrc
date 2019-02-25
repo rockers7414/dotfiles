@@ -25,10 +25,7 @@ Plugin 'VundleVim/Vundle.vim'
 " move
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'matze/vim-move'
-execute "set <A-j>=\ej"
-execute "set <A-h>=\eh"
-execute "set <A-k>=\ek"
-execute "set <A-l>=\el"
+let g:move_key_modifier = 'C'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERD tree
@@ -38,9 +35,12 @@ execute "set <A-l>=\el"
 " simple filesystem operations.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'scrooloose/nerdtree'
-map <C-n> :NERDTreeToggle<CR>
+map <C-f> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$','__pycache__','\.swp$']
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'airblade/vim-gitgutter'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SOLARIZED COLORSCHEME FOR VIM
@@ -52,7 +52,7 @@ set background=dark
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VIM-AIRLINE and THEMES
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 set laststatus=2
 let g:airline_powerline_fonts=1
@@ -60,8 +60,8 @@ let g:solarized_termtrans=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#left_sep=' '
 let g:airline#extensions#tabline#left_alt_sep='|'
-map <C-h> :bp<CR>
-map <C-l> :bn<CR>
+map <C-p> :bp<CR>
+map <C-n> :bn<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " TAGBAR A CLASS OUTLINE VIEWER FOR VIM
@@ -93,7 +93,8 @@ let NERDSpaceDelims=1
 " CTRLP.VIM
 " Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctlpvim/ctrlp.vim'
+let g:ctrlp_map = '<c-o>'
 let g:ctrlp_working_path_mode=0
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/temp/*,*/target/*,*/node_modules/*,*/__pycache__/*,*.pyc
 let g:ctrlp_show_hidden = 1
@@ -110,19 +111,6 @@ Plugin 'editorconfig/editorconfig-vim'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'w0rp/ale'
 let g:ale_python_flake8_args = '--ignore=E501'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vim Markdown
-" Syntax highlighting, matching rules and mappings for the original Markdown
-" and extensions.
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim-instant-markdown
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'suan/vim-instant-markdown'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " typescript-vim
